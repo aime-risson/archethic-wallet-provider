@@ -1,0 +1,16 @@
+{
+  "name": "archethic-provider",
+  "version": "0.0.1",
+  "description": "Build DApps on archethic !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aimé Risson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "react": "^18.2.0",
+    "typescript": "^5.0.4"
+  }
+}
