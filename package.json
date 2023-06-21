@@ -2,9 +2,23 @@
   "name": "archethic-provider",
   "version": "0.0.1",
   "description": "Build DApps on archethic !",
-  "main": "index.js",
+  "main": "./dist/WalletProvider.js",
+  "module": "./dist/WalletProvider.js",
+  "types": "./dist/WalletProvider.d.ts",
+    "exports": {
+        ".": {
+        "import": "./dist/WalletProvider.js",
+        "require": "./dist/WalletProvider.js"
+        },
+        "./dist/WalletProvider.js": "./dist/WalletProvider.js",
+        "./dist/WalletProvider.d.ts": "./dist/WalletProvider.d.ts"
+    },
+  "files": [
+      "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "author": "Aimé Risson",
   "license": "MIT",
@@ -12,5 +26,8 @@
     "@types/react": "^18.0.37",
     "react": "^18.2.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "archethic": "file:../libjs"
   }
 }
