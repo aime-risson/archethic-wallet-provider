@@ -212,7 +212,7 @@ const WalletProvider = ({children, initilizeOnPageLoad = false, origin}: WalletP
         if (initilizeOnPageLoad){
             initialize();
         }
-    }, []);
+    }, [initialize]);
 
     return (
         <WalletContext.Provider value={{
